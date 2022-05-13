@@ -1,0 +1,591 @@
+.safe .content .hiding p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+html{
+  scroll-behavior: smooth;
+}
+.safe .content .hiding p a{
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+}
+.safe .content .hiding p span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.safe .content .hiding p a:hover{
+    text-decoration: underline;
+}
+:root {
+    --dark-orange:rgb(217, 61, 28);
+      --darkBlue:rgb(31, 31, 46);
+      --orange:rgb(255, 72, 35);
+      --gray:rgb(242, 242, 244);
+      --fontColor:rgb(181, 170, 170);
+      --font-family-sans-serif:'Poppins', sans-serif;
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Small */
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    /* Medium */
+    @media (min-width: 992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    /* Large */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       box-sizing: border-box;
+       transition-timing-function: ease-in-out;
+       caret-color: var(--orange);
+    }
+    input{
+      color: var(--darkBlue);
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-family-sans-serif);
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    h1,h2,h3,h4,h5,h6,p,span{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        
+        
+    }
+  
+    h1,h2,h3,h4,h5,h6,p,span{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        
+        
+    }
+   
+  
+    /* starting header section */
+    header{
+      background-color: var(--darkBlue);
+      color: white;
+      font-size: 13px;
+    }
+    header .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px;
+    }
+    header .container .contact li{
+      display: inline-block;
+      
+    }
+    header .container .contact li i{
+      margin-right:10px ;
+    }
+    header .container .contact li:first-child{
+      padding-right: 15px;
+      border-right: 1px solid white;
+    }
+    header .container .contact li:last-child{
+     padding-left: 15px;
+    }
+    header .container .icons i{
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    /* ending header section */
+    /* starting nav section */
+    nav {
+    background-color: white;
+    color: var(--orange);
+    }
+    nav .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
+    }
+    nav .container .logo li {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    nav .container .logo li i{
+      font-size: 32px;
+    }
+    nav .container .headers> ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    nav .container .headers >ul li a{
+      text-decoration: none;
+      color: var(--darkBlue);
+      padding:0 15px ;
+      font-weight: 500;
+      height: 90px;
+      display:inline-block;
+      transition-duration:0.3s ;
+      line-height: 90px;
+    }
+    nav .container .headers > ul li a:hover{
+      background-color: var(--orange);
+      color: white;
+    }
+    nav .container .link a {
+      display: block;
+      color: white;
+      background-color: var(--orange);
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav .container .link a:hover{
+      background-color: var(--dark-orange);
+    }
+  
+  
+  
+   
+    a.active{
+      background-color: var(--orange);
+      color: white !important;
+    }
+  
+  
+   
+  @media (min-width:992px){
+    nav .container .dropicon{
+      display: none;
+    }
+  }
+   @media (max-width:991px){
+    nav .container .link{
+      display: none;
+    }
+    nav .container .dropicon i{
+      font-size: 30px;
+      cursor: pointer;
+    }
+    nav .container{
+      position: relative;
+  
+    }
+    nav .container .headers {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 100%;
+      height: 0;
+      transition: 0.7s;
+      overflow: hidden;
+      z-index: 1000;
+      background-color: white;
+    }
+    nav .container .headers.free{
+      height: 210px;
+      overflow: visible;
+    }
+  
+    nav .container .headers >ul{
+      flex-direction: column;
+     align-items: flex-start;
+  
+    }
+    nav .container .headers >ul li a,
+    nav .container .headers >ul li
+     {
+      width: 100% !important;
+      height: 35px;
+      line-height: 35px;
+    
+    }
+    
+   }
+   @media (max-width:767px){
+     header .container {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+     header .container .contact{
+       margin-bottom: 10px;
+     }
+   }
+    /* ending nav section */
+    /* starting safe section */
+    .safe{
+      
+      background-image: url("../img/header.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: calc(100vh - 350px);
+      position: relative;
+    }
+    .safe::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0 0 0 /80%);
+    }
+    .safe .content{
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      z-index: 2;
+      
+    }
+    .safe .content .hiding h3{
+      font-size: 40px;
+      font-weight: 900;
+      color: var(--orange);
+     
+      
+    }
+    .safe .content .hiding h1{
+      font-size: 60px;
+      color: white;
+      font-weight: 900;
+      margin-top: 20px;
+      
+    }
+    .safe .content form input:first-child:focus{
+      border-color: var(--orange);
+    }
+    .safe .content form input:first-child{
+      margin-right: 0;
+      padding: 15px 10px;
+      outline: none;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      display: inline-block;
+      width: 40%; 
+    }
+    .safe .content form{
+       margin-top: 40px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .safe .content form input:last-child{
+     transition: 0.3s;
+      padding:15px 10px ;
+      margin-left: 0;
+      outline: none;
+      display: inline-block;
+      background-color: var(--orange);
+      color: white;
+      border: none;
+      cursor: pointer;
+    
+    }
+    .safe .content form input:last-child:hover{
+      background-color: var(--dark-orange);
+    }
+    @media (max-width:991px){
+      .safe .content .hiding h3{
+      font-size: 10px;  
+      }
+      .safe .content .hiding h1{  
+        font-size: 40px;  
+      }
+      .safe .content form input:last-child,
+      .safe .content form input:first-child{
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .safe .content form input:last-child{
+        margin-top: 10px;
+      }
+   
+    }
+  
+    /* ending safe section */
+    /* start about section */
+     /* starting footer section */
+  footer{
+    padding-top:80px ;
+    background-color: var(--darkBlue);
+    color: white;
+  }
+  footer .container .contentone{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  
+  }
+  footer .container .contentone >div{
+    width: 24%;
+  }
+  footer .container .contentone >div h2{
+    color: var(--orange);
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  footer .container .contentone .get ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    transition: 0.2s;
+  
+  }
+  footer .container .contentone .get ul li a:hover{
+    color: var(--darkBlue);
+    background-color: white;
+  }
+  footer .container .contentone .get ul li a:not(:first-child){
+    margin-left: 10px;
+  }
+  
+  footer .container .contentone .get ul li {
+    margin-bottom: 20px;
+  }
+  footer .container .contentone .links ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: 0.1s;
+  
+  }
+  footer .container .contentone .links ul li a:hover{
+    text-decoration: underline;
+  }
+  footer .container .contentone .links ul li:not(:last-child){
+    margin-bottom: 13px;
+  }
+  footer .container .contentone .links ul li a i{
+    margin-right:4px ;
+  }
+  footer .container .contentone .letter p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+  
+  }
+  footer .container {
+    width: 90%;
+  }
+  footer .container .contentone .letter form {
+    display: flex;
+    
+  }
+  footer .container .contentone .letter form input:first-child{
+    width: 100%;
+  }
+  
+  footer .container .contentone .letter form input{
+  
+    margin: 0;
+    outline: none;
+    border: none;
+   padding: 15px 7px;
+   transition: 0.3s;
+  }
+  footer .container .contentone .letter form input:last-child{
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  footer .container .contentone .letter form input:last-child:hover{
+    background-color: var(--dark-orange);
+  }
+  @media (max-width:991px){
+    footer .container .contentone >div {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+  footer .container .contenttwo{
+   padding: 20px 0;
+    color: white;
+    border-top: 0.1px solid white;
+    text-align: center;
+    
+  }
+  footer .container .contenttwo span{
+    color: var(--orange);
+  }
+  /* ending footer section */
+  /* starting the signin section */
+  .signin{
+    padding: 80px 0;
+  }
+  .signin .container .form {
+    padding: 30px 30px;
+    background-color: var(--gray); 
+    width: 70%; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid var(--orange);
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 2px rgb(0 0 0 /30%);
+    transition: 0.5s;
+   
+  }
+  .signin .container .form >div{
+    width: 100%;
+  }
+  .signin .container .form div.login  h1
+  ,.signin .container .form div.regester h1{
+   text-align: center;
+   color: white;
+   font-weight: 900;
+   -webkit-text-stroke: 1px var(--orange);
+  }
+  .signin .container .form div.login form,
+  .signin .container .form div.regester form{
+    margin: 40px 0;
+    width: 100%;
+  }
+  .signin .container .form div.login form input,
+  .signin .container .form .regester form input{
+    display: block;
+    padding: 25px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+  }
+  .signin .container .form .regester form div i{
+    color: var(--orange);
+  }
+  
+  .login .pass,.login .email,
+  .signin .container .form .regester form div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border-bottom:1px solid var(--orange) ;
+  }
+  .login .pass i,.login .email i{
+   color: var(--orange);
+   margin-right: 5px;
+  }
+  .signin .container .form div.login p,
+  .signin .container .form .regester p{
+    color: var(--darkBlue);
+  }
+  label{
+    color: var(--darkBlue);
+  }
+  .signin .container .form div.login p span,
+  .signin .container .form .regester p span{
+    color: var(--orange);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .signin .container .form div.login p span:hover{
+    color: var(--dark-orange);
+  }
+  .signin .container .form div.login form input::placeholder ,
+  .signin .container .form .regester form input::placeholder{
+    color: var(--fontColor);
+
+  }
+  .signin .container .form div.login form input[type="checkbox"],
+  .signin .container .form .regester form input[type="checkbox"]{
+    display: inline-block;
+    width: fit-content;
+    margin-right: 5px;
+   
+  }
+  .signin .container .form div.login form input[type="submit"],
+  .signin .container .form .regester form input[type="submit"]{
+   background-color: var(--orange);
+   color: white;
+   transition: 0.3s;
+   cursor: pointer;
+   margin-top: 30px;
+   border-radius:20px ;
+  }
+  .signin .container .form div.login form input[type="submit"]:hover,
+  .signin .container .form .regester form input[type="submit"]:hover{
+    background-color: var(--dark-orange);
+  }
+ @media (max-width:767px){
+  .signin .container .form {
+    width: 100%;
+  }
+ }
+  /* ending the signin section */
+
+.signin .container .form {
+  max-height: 605px;
+  overflow: hidden;
+}
+.signin .container .form .regester{
+  transform: translateY(785px);
+  transition: 0.5s;
+}
+.signin .container .form .login{
+  transition: 0.5s;
+}
+.jsheight{
+  max-height: 785px !important;
+}
+.jsmovelogin{
+  transform: translateY(-605px);
+}
+.jsmovereg{
+  transform:translateY(-430px) !important;
+}
+
+/* 605 */
+/* 785 */
+
+  
+  
