@@ -471,7 +471,9 @@ html{
     border: 1px solid var(--orange);
     border-radius: 20px;
     box-shadow: 0 3px 15px 2px rgb(0 0 0 /30%);
-    transition: 0.5s;
+    transition: 1s;
+    transition-timing-function:  ease-out;
+
    
   }
   .signin .container .form >div{
@@ -569,10 +571,12 @@ html{
 }
 .signin .container .form .regester{
   transform: translateY(785px);
-  transition: 0.5s;
+  transition: 1s;
+  transition-timing-function: ease-out;
 }
 .signin .container .form .login{
-  transition: 0.5s;
+  transition: 1s;
+  transition-timing-function: ease-out;
 }
 .jsheight{
   max-height: 785px !important;
